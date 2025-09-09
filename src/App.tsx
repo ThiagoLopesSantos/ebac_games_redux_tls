@@ -3,8 +3,9 @@ import Header from './components/Header'
 import Produtos from './containers/Produtos'
 
 import { GlobalStyle } from './styles'
+import { configuraStore } from './store'
 
-import { store } from './store'
+const store = configuraStore()
 
 export type Game = {
   id: number
